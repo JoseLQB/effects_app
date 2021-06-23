@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 
 import {SharedModule} from './shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StoreModule } from '@ngrx/store';
+import { appReducers } from './store/app.reducers';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     SharedModule,
     UsuariosModule,
-    NgbModule
+    NgbModule,
+    StoreModule.forRoot(
+      appReducers
+    )//min 3:24 v146
   ],
   providers: [],
   bootstrap: [AppComponent]
