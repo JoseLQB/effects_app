@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "effectsAPP"
+  "defaultProject": "effectsAPP",
+  "cli": {
+    "analytics": false
+  }
 }
